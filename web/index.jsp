@@ -13,9 +13,13 @@
   <body>
   <form action="/Servlet101" method="post">
     <input type="text" name = "id"/>
-    <textarea cols="50" rows="10"></textarea>
 
   </form>
+
+  <form action="/Servlet101" method="get">
+    <textarea cols="50" rows="10"></textarea>
+  </form>
+
   $END$
   </body>
 </html>
