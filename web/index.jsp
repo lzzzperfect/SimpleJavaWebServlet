@@ -12,12 +12,18 @@
   </head>
   <body>
   <form action="/Servlet101" method="post">
-    <input type="text" name = "id"/>
+    This is post method: </br>
+
+    Input id: <input type="text" name = "id"/>
+    </br>
+    Input First Name: <input type="text" name = "id"  />
+    </br>
 
   </form>
 
   <form action="/Servlet101" method="get">
-    <textarea cols="50" rows="10"></textarea>
+    This is get Method:</br>
+    <input type="button" name = "get" value="click to show new page" onclick="location='http://localhost:8080/Servlet101'"/>
   </form>
 
   $END$

@@ -17,6 +17,7 @@ public class FirstExample {
         connection = DriverManager.getConnection(DB_URL,USER,PASS);
         //statement initial
         statement=connection.createStatement();
+        //display all students' id and firstName in STUDENT
         String sql="SELECT id, first_name FROM student";
         ResultSet resultSet=statement.executeQuery(sql);
         while (resultSet.next()){
