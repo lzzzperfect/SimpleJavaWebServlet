@@ -8,10 +8,12 @@ import java.sql.SQLException;
 public class Servlet101 extends javax.servlet.http.HttpServlet {
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         //
+        int id=Integer.parseInt(request.getParameter("id"));
+        String firstName=request.getParameter("firstname");
 
         //
         PrintWriter out = response.getWriter();
-        out.println("The Parameter are :"+request.getParameter("id"));
+        out.println("The new one added is: id:"+id+", First Name: "+firstName);
     }
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
@@ -28,7 +30,7 @@ public class Servlet101 extends javax.servlet.http.HttpServlet {
         //check it out on http://localhost:8080/Servlet101
         PrintWriter out =response.getWriter();
         out.println("<html>");
-        out.println("<head><title>Servlet展示页</title></head>");
+        out.println("<head><title>Servlet Showcase</title></head>");
         out.println("<body>All the student info are displayed in Output" + "<br/> 666 " +"</body>");
         out.println("</html>");
 

@@ -16,9 +16,9 @@
 
     Input id: <input type="text" name = "id"/>
     </br>
-    Input First Name: <input type="text" name = "id"  />
+    Input First Name: <input type="text" name = "firstname"  />
     </br>
-
+    <input type="button" name = "add" value="Add" onclick="location='http://localhost:8080/Servlet101'"/>
   </form>
 
   <form action="/Servlet101" method="get">
