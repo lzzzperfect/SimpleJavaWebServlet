@@ -11,17 +11,17 @@
     <title>$Title$</title>
   </head>
   <body>
-  <form action="/Servlet101" method="post">
+  <form action="Servlet101" method="post">
     This is post method: </br>
 
     Input id: <input type="text" name = "id"/>
     </br>
     Input First Name: <input type="text" name = "firstname"  />
     </br>
-    <input type="button" name = "add" value="Add" onclick="location='http://localhost:8080/Servlet101'"/>
+    <input type="submit" name = "add" value="Add" />
   </form>
 
-  <form action="/Servlet101" method="get">
+  <form action="Servlet101" method="get">
     This is get Method:</br>
     <input type="button" name = "get" value="click to show new page" onclick="location='http://localhost:8080/Servlet101'"/>
   </form>
